@@ -3,7 +3,15 @@
 /**
  * usage:
  * 
- * php generate_slides.php outline.md Slides/
+ * In MindMup: File > Download as > Outline 
+ * - Format: Markdown
+ * - Outline type: 3 heading levels + bullet points
+ * + Include text nodes
+ * => will output xxxxx.outline.md
+ * 
+ * then:
+ * 
+ * php generate_slides.php xxxxx.outline.md Slides/
  * 
  */
 
