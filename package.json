@@ -1,0 +1,26 @@
+{
+  "name": "zenika-formation-modele",
+  "description": "Exemple canonique d'un repository de formation. Peut être forké pour créer une nouvelle formation.",
+  "version": "1.0.0",
+  "author": "Zenika",
+  "homepage": "https://training.zenika.com/formations/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zenika/Formation--Modele"
+  },
+  "private": true,
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "gulp": "^3.9.0",
+    "zenika-formation-framework": "^2.0.1"
+  },
+  "config": {
+    "deploy": {
+      "name": "zen-formation-modele"
+    }
+  },
+  "scripts": {
+    "start": "grunt",
+    "deploy": "zenika-formation-deploy"
+  }
+}
