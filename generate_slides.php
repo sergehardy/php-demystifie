@@ -45,16 +45,16 @@ foreach($lines as $line)
     
     if(preg_match('/# (.*)\. (.*)/', $line, $matches))
     {
-        $start_new_slide = true;
+        $start_new_slide = true;    
         
-        $n = $matches[1];
-        $title = $matches[2];
+        $last_n = $n;
+        $last_title = $title;
         
         if($last_slide!="")
         {
-          $last_slide = sprintf("# %s\n%s",$title,$last_slide);
+          $last_slide = sprintf("# %s\n\n<!-- .slide: class=\"page-title\" -->\n%s",$last_title,$last_slide);
           
-          $slide_fn = sprintf("%s_%s.md",$n,slugify($title));
+          $slide_fn = sprintf("%s_%s.md",$last_n,slugify($title));
         
           file_put_contents("$output_dir/$slide_fn",$last_slide);
           
@@ -62,7 +62,8 @@ foreach($lines as $line)
         }
         
         
-        
+        $n = $matches[1];
+        $title = $matches[2];
         $last_slide="";
         
     }

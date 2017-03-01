@@ -1,4 +1,5 @@
 #!/bin/bash
+
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -128,7 +129,7 @@ runContainer() {
       -v "$VOLUME_CAHIEREXERCICES" -v "$VOLUME_PDF_PUBLISH" \
       --name="$containerName" \
       "$DOCKER_IMAGE_NAME":"$DOCKER_IMAGE_VERSION" \
-      $* > /dev/null
+      #$* > /dev/null
   echo "  Nom de conteneur : $containerName"
   local dockerPort=`docker ps -l | grep "$containerName" | sed 's/.*:\([0-9]*\)->8000.*/\1/'`
   local dockerAddress=$(getDockerAddress)
