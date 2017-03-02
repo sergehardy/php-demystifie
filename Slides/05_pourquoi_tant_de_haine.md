@@ -6,16 +6,19 @@
 
 ## Ecosystème #1
 
-* Modèle communautaire sans leader 
-* Gouvernance in(visible|existante) donc décisions lentes et contestées 
-* La faciliter de déploiement a attiré beaucoup de publics 
-* Pas de nivellement par le haut 
+* Modèle communautaire sans leader  <!-- .element: class="fragment" -->
+* Gouvernance in(visible|existante) donc décisions lentes et contestées <!-- .element: class="fragment" -->
+* La faciliter de déploiement a attiré beaucoup de publics <!-- .element: class="fragment" -->
 
 
-=> Au final peu de fédération communautaire 
 
-=> Pendant longtemps, 1 développeur <=> 1 CMS | Framework 
+## Au final
 
+* peu de fédération communautaire <!-- .element: class="fragment" -->
+* pas de nivellement par le haut  <!-- .element: class="fragment" -->
+* pendant longtemps, 1 développeur <=> 1 CMS | Framework <!-- .element: class="fragment" -->
+
+<!-- .element: class="fragment" -->
 cf http://cmsmatrix.org
 
 
@@ -28,9 +31,9 @@ Une [non-référence](http://php.net/manual/fr/ref.mysql.php)
 
 ### phpBB 
 
-Du [grand art](https://github.com/phpbb/phpbb/commits/2.0.x/phpBB/index.php)
+Du [grand art](https://github.com/phpbb/phpbb/blob/2.0.x/phpBB/index.php)
 
 ### Sécurité 
 
-* Magic quotes
-* Injection
+* Magic quotes <!-- .element: class="fragment" -->
+* Injection <!-- .element: class="fragment" -->

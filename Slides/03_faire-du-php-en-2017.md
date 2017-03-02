@@ -4,48 +4,38 @@
 
 * Création d'un projet avec Composer
 
-	```html
+```html
 <img src="https://getcomposer.org/img/logo-composer-transparent.png"/>
 ```
 
-	```bash
+```bash
  composer create-project symfony/framework-standard-edition my_project
 ```
-* Routing + Contrôleur
 
-	```php
-// src/AppBundle/Controller/LuckyController.php
+
+
+## Exemple Symfony
+```php
 namespace AppBundle\Controller;
 
-	use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-	class LuckyController
+class LuckyCoyntroller
 {
     /**
      * @Route("/lucky/number")
+     * @Template()
      */
     public function numberAction()
     {
         $number = mt_rand(0, 100);
 
-	        return new Response(
-            'Lucky number: '.$number.''
-        );
+        return [ 'number' => $number ];
     }
 }
-```f
-* Service
-
-	```
- app/config/services.yml
-services:
-    app.mailer:
-        class:        AppBundle\Mailer
-        arguments:    [sendmail]
 ```
-* Vue
 
-	Example de Twig
-* Démo Symfony
-
+```twig
+Lucky number: {{ number }}
+```

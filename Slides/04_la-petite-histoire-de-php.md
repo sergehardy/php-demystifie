@@ -10,7 +10,9 @@ Créé en 1994 par Rasmus Lerdorf pour suivre les visites de son CV en ligne.
 
 ![Rasmus](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wikirl.jpg/220px-Wikirl.jpg)
 
-Message original
+
+
+## Message original
 ```
 	Announce: Personal Home Page Tools (PHP Tools)
 
@@ -32,7 +34,13 @@ They perform a number of functions including:
 . Ability to not log accesses from certain domains (ie. your own)
 . Easily create and display forms
 . Ability to use form information in following documents
+```
 
+
+
+## Message original
+
+```
 	Here is what you don't need to use these tools:
 
 	. You do not need root access - install in your ~/public_html dir
@@ -43,8 +51,7 @@ They perform a number of functions including:
 	The only requirement for these tools to work is that you have
 the ability to execute your own cgi programs.  Ask your system
 administrator if you are not sure what this means.
-
-	The tools also allow you to implement a guestbook or any other
+  The tools also allow you to implement a guestbook or any other
 form that needs to write information and display it to users
 later in about 2 minutes.
 
@@ -67,45 +74,53 @@ http://www.io.org/~rasmus
 
 	1996
 
-	Inclure du code de http://php.net/manual/fr/history.php.php
-* PHP 3
+```
+<!--include /text/header.html-->
 
-	Deux étudiants israëliens contactent RL pour réécrire le code
+<!--getenv HTTP_USER_AGENT-->
+<!--ifsubstr $exec_result Mozilla-->
+  Hé, vous utilisez Netscape !<p>
+<!--endif-->
 
-	C'est la première mouture avec la syntaxe actuelle
+<!--sql database select * from table where user='$username'-->
+<!--ifless $numentries 1-->
+  Désolé, cette ligne n'existe pas<p>
+<!--endif exit-->
+  Bienvenue <!--$user--> !<p>
+  Vous avez <!--$index:0--> crédits sur votre compte.<p>
 
-	
+<!--include /text/footer.html-->
+```
 
-	1.3 Competition : ASP, mod_perl, JSP
 
-	ASP is quite popular and I've written some applications in ASP since January 2000. Microsoft's arguments for ASP include availability of tools like Visual Interdev, language independence and easy learning curve. I have used VIM to code ASP, so I can't say much about the tools. Language independence is also not that much of an issue, just because in its default configuration it supports VBScript and JScript. You can also get extensions which makes it possible to write ASP in PerlScript making it a good choice for folks who are used to mod_perl and Apache. At least for a simple directory listing code, PHP3.0 on a P133 with 32MB RAM ran circles around ASP code on an NT4 machine with dual P500 with 600MB RAM! I tend to prefer PHP3. Also, VBScript's string functions are a pain to use (IMHO) - though it has REGEX capability now.
 
-	JSP has a very unique advantage that you need to know Java alone. From what I've seen, most people would prefer to work in one language and use that for as many purposes as possible. This, and the training costs involved will make Java an attractive option for companies. Additionally, there are already a number of tools out there for Java. Architecture-wise JSP+Servlets are comparable to VBScript+COM. For quick web-site building JSP may not be worth the trouble. For businesses, this would make more sense, especially since a number of Java based application servers are already in the market. From my personal experience, both Java and ASP need elite hardware, whereas PHP3 with Apache on Linux will perform adequately with your old P133 :-)
+## PHP 3
 
-	mod_perl is as powerful as Perl is. It is also quite fast. PHP4 with Zend engine will probably be as fast as mod_perl. However, Perl code can get unmaintainable quickly - this is just my opinion and goes well with Perl's idea of being a language for the lazy.
+Deux étudiants israëliens contactent RL pour réécrire le code
 
+C'est la première mouture avec la syntaxe actuelle
 
 
 ## PHP 4
 
-* Nouveau moteur **Zend Engine**
-* Plus d'intégration de 3rd parties
-* Meilleures performances
+* Nouveau moteur **Zend Engine** <!-- .element: class="fragment" -->
+* Plus d'intégration de 3rd parties <!-- .element: class="fragment" -->
+* Meilleures performances <!-- .element: class="fragment" -->
 
 
 
 ## PHP 5
 
-* Couche OOP conséquente
-* Performances améliorées
+* Couche OOP conséquente <!-- .element: class="fragment" -->
+* Performances améliorées <!-- .element: class="fragment" -->
 
 ## 5.3+ 
 
 (2009-)
 
-* Namespaces
-* Traits, Générateurs
-* Opcache
+* Namespaces <!-- .element: class="fragment" -->
+* Traits, Générateurs <!-- .element: class="fragment" -->
+* Opcache <!-- .element: class="fragment" -->
 
 
 

@@ -2,13 +2,16 @@
 
 <!-- .slide: class="page-title" -->
 
-* Fabien
-* Serge
 
-	Note:
 
-	Plutôt Java à la base
-Première boîte: Ariase. Startup, full-web. PHP choisi pour la facilité d'utilisation de la stack LAMP
-2005: PHP 5 et première couche OOP sérieuse
-* Et vous?
+## Comment devient-on développeur PHP?
 
+<img width="45%" src="http://www.commitstrip.com/wp-content/uploads/2016/09/Strip-Apprendre-a-etre-dev-650-final-1.jpg" />
+
+
+
+## Et vous? 
+
+* Vos expériences?
+* Les + ?
+* Les - ?
