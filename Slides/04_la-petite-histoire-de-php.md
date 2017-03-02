@@ -141,3 +141,5 @@ Support d'unicode natif n'a jamais pu aboutir
 
 Un mal pour un bien?
 
+Note : PHP 7 => marketing, (suite à un vote) pour éviter la confusion et mettre un terme au débat
+
