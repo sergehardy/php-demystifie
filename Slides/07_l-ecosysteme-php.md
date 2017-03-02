@@ -36,8 +36,3 @@
 
 
 <img src="http://media.topito.com/wp-content/uploads/2014/03/pornhub-600x750.jpg"/>
-
-* Les leaders
-	* Merci qui?
-* Les outils
-
