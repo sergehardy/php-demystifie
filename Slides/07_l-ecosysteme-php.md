@@ -22,7 +22,7 @@
 
 * PHP Tour / Symfony con / PHP[TEK]
 
-* Des libs de qualité (OAUTH, AMQP, ES, ...)
+* Des libs de qualitées (TWIG, OAUTH, AMQP, ES, ...)
 
 
 
