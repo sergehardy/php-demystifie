@@ -30,11 +30,11 @@ bool property_exists ( mixed $class , string $property )
 
 
 
-## Cycle de vie déstructif
+## Cycle de vie destructif
 
 * Processus courts, qui meurent dès la fin du traitement<!-- .element: class="fragment" -->
 * Thread safe<!-- .element: class="fragment" -->
-* Pénalisant pour les gros framework<!-- .element: class="fragment" -->
+* Pénalisant pour les gros frameworks<!-- .element: class="fragment" -->
 
 
 ## Configuration complexe<!-- .element: class="fragment" -->
