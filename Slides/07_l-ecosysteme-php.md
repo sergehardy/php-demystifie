@@ -18,6 +18,8 @@
 
 ## Une communauté active
 
+* AFUP
+
 * PHP Tour / Symfony con / PHP[TEK]
 
 * Des libs de qualitées (OAUTH, AMQP, ES, ...)
